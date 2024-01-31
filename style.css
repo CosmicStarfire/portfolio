@@ -1,0 +1,44 @@
+/* html */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* global variables */
+:root {
+  /* color definitions */
+  /* basic */
+  /* gradients */
+
+  /* text fonts */
+  /* font styles */
+  /* font sizes */
+
+  /* line-height */
+
+  /* spacing */
+
+  /* border radius */
+
+  /* wrappers */
+}
+
+/* body*/
+
+/* header styles */
+
+/* footer styles */
+
+/* media queries */
+/* Tablet and Smaller */
+@media screen and (max-width: 1080px) {
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+}
