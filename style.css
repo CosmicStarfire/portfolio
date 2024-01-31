@@ -32,6 +32,33 @@ html {
 
 /* header styles */
 
+/* section 1 styling */
+
+/* section 2 styling */
+
+/* section 3 styling */
+
+/* section 4 styling GALLERY*/
+/* gallery imgs for dt */
+
+.desktop-gal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.row-dt-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.desktop-gal img {
+  width: calc(33% - 10px);
+  margin: 5px;
+}
+
 /* footer styles */
 
 /* media queries */
