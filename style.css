@@ -16,8 +16,13 @@ html {
   /* gradients */
 
   /* text fonts */
+  --yellow-pink-font: "Honk", system-ui;
+  --hand-written-font: "Caveat", cursive;
+
   /* font styles */
   /* font sizes */
+  --font-weight-4: 400;
+  --font-weight-7: 700;
 
   /* line-height */
 
