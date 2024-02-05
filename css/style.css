@@ -12,6 +12,8 @@ html {
 /* global variables */
 :root {
   /* color definitions */
+  --color-white: white;
+  --color-black: black;
   /* basic */
   /* gradients */
 
@@ -34,8 +36,20 @@ html {
 }
 
 /* body*/
-
+body {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
 /* header styles */
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url(../assets/images/tipi-ceremony.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* font-size: var(--font-size-normal); */
+}
 
 /* section 1 styling */
 
@@ -73,4 +87,9 @@ html {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+}
+@media (max-width: 500px) {
+  .header {
+    text-align: center;
+  }
 }
