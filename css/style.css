@@ -57,8 +57,26 @@ body {
 
 /* section 3 styling */
 
-/* section 4 styling GALLERY*/
-/* gallery imgs for dt */
+/* section 4 */
+
+/* form */
+/* contact form */
+.form-info {
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--hand-written-font);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 70%;
+  max-width: 500px;
+}
 
 .desktop-gal {
   display: flex;
