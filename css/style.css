@@ -40,6 +40,17 @@ body {
   color: var(--color-white);
   background-color: var(--color-black);
 }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
 /* header styles */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),

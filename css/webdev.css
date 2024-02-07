@@ -9,3 +9,11 @@
   background-attachment: fixed;
   /* font-size: var(--font-size-normal); */
 }
+
+/* section code */
+section {
+  padding: 12rem 0;
+  border-bottom: 1px solid rgb(36, 35, 35);
+}
+
+/* media queries */
