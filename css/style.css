@@ -33,6 +33,14 @@ html {
   /* border radius */
 
   /* wrappers */
+  --wrapper-max-width: 1440px;
+  --wrapper-width: 90%;
+}
+
+.wrapper {
+  width: var(--wrapper-width);
+  max-width: var(--wrapper-max-width);
+  margin: 0 auto;
 }
 
 /* body*/
@@ -45,6 +53,7 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 0;
 }
 
 li {
@@ -62,6 +71,79 @@ li {
   /* font-size: var(--font-size-normal); */
 }
 
+/* nav styles */
+nav a {
+  font-size: 20px;
+  color: var(--color-white);
+  /* font family */
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+}
+
+/* header h1 */
+h1 span {
+  display: block;
+}
+
+/* hero btn styles */
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4.2rem;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--pink);
+  font-weight: 400;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  background: var(--white);
+  height: 100%;
+  z-index: -1;
+  transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.btn:hover::after,
+.btn:focus::after {
+  right: 0;
+  background: var(--pink);
+}
+
+.btn--pink {
+  background: var(--pink);
+  transition: all 0.2s;
+}
+
+.btn--pink::after {
+  display: none;
+}
+
+.btn--pink:hover,
+.btn--pink:focus {
+  background: transparent;
+}
+/* hero btn styles end */
+
+/* section code */
+section {
+  padding: 12rem 0;
+  border-bottom: 2px solid rgb(36, 35, 35);
+}
 /* section 1 styling */
 
 /* section 2 styling */
