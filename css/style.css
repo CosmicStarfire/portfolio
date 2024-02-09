@@ -65,11 +65,12 @@ li {
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
     url(../assets/images/hero-tipi.jpg);
-  min-height: 100vh;
-  background-size: cover;
+  min-height: 70vh;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
+  position: relative;
   /* font-size: var(--font-size-normal); */
 }
 
@@ -84,10 +85,11 @@ nav a {
 nav ul {
   display: flex;
   justify-content: flex-end;
-  padding-top: 40px;
+  padding-top: 25px;
   gap: 40px;
 }
 
+/* possibly get rid of all the position absolutes and relatives and use flex boxes instead try that! */
 .title-container {
   position: absolute;
   top: 50%;
@@ -158,6 +160,31 @@ section {
 /* section 1 styling */
 
 /* section 2 styling */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card {
+  border: 2px solid var(--color-pink);
+  width: 20%;
+}
+
+.cardimg {
+  width: 100%;
+}
+
+.cardimg img {
+  width: 100%;
+}
+
+.port-text {
+  padding: 15px;
+}
+
+.port-text h3 {
+  text-align: center;
+}
 
 /* section 3 styling */
 
@@ -182,7 +209,7 @@ section {
   max-width: 500px;
 }
 
-.desktop-gal {
+/* .desktop-gal {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,7 +225,7 @@ section {
 .desktop-gal img {
   width: calc(33% - 10px);
   margin: 5px;
-}
+} */
 
 /* footer styles */
 
