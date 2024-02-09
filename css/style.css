@@ -65,14 +65,15 @@ li {
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
     url(../assets/images/hero-tipi.jpg);
-  min-height: 70vh;
-  background-size: contain;
+  min-height: 100vh;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
-  position: relative;
+  /* position: relative; */
   /* font-size: var(--font-size-normal); */
 }
+/* needs adjusting to sweet spot */
 
 /* nav styles */
 nav a {
