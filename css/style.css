@@ -71,7 +71,6 @@ li {
   background-position: center;
   background-attachment: fixed;
   /* position: relative; */
-  /* font-size: var(--font-size-normal); */
 }
 /* needs adjusting to sweet spot */
 
@@ -94,8 +93,9 @@ nav ul {
 .title-container {
   position: absolute;
   top: 50%;
-  right: 25%;
-  transform: translateY(-50%);
+  /* right: 25%; */
+  left: 52%;
+  transform: translate(-50%, -50%);
 }
 
 /* header h1 */
