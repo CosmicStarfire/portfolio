@@ -2,12 +2,44 @@
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    url(../assets/images/tipi-ceremony.jpg);
+    url(../assets/images/web-dev-hero.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   /* font-size: var(--font-size-normal); */
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  /* right: 25%; */
+  left: 55%;
+  transform: translate(-50%, -50%);
+  min-width: 600px;
+}
+
+/* projects styling */
+.center {
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.pc-text {
+  text-align: center;
+  width: 50%;
+}
+
+.pc-img {
+  width: 50%;
+}
+
+.pc-img img {
+  width: 100%;
 }
 
 /* section code

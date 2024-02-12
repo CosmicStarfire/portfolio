@@ -54,6 +54,8 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
   margin-top: 0;
 }
 
@@ -206,6 +208,16 @@ section {
 /* section 4 */
 
 /* form */
+.form-text {
+  display: flex;
+}
+.textbox-form {
+  width: 60%;
+  padding-top: 50px;
+}
+.form-box {
+  width: 100%;
+}
 /* contact form */
 .form-info {
   text-align: center;
