@@ -60,7 +60,19 @@ ul {
 li {
   list-style: none;
 }
-
+/* sr only custom class  */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* header styles */
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
@@ -73,6 +85,7 @@ li {
   /* position: relative; */
   /* font-size: var(--font-size-normal); */
 }
+
 /* needs adjusting to sweet spot */
 
 /* nav styles */
@@ -94,8 +107,9 @@ nav ul {
 .title-container {
   position: absolute;
   top: 50%;
-  right: 25%;
-  transform: translateY(-50%);
+  /* right: 25%; */
+  left: 51%;
+  transform: translate(-50%, -50%);
 }
 
 /* header h1 */
@@ -234,7 +248,13 @@ section {
 /* Tablet and Smaller */
 @media screen and (max-width: 1080px) {
 }
-
+/* Media */
+@media screen and (max-width: 925px) {
+  .header {
+    background-size: contain;
+    background-position: top;
+  }
+}
 /* Mobile */
 @media screen and (max-width: 768px) {
 }
