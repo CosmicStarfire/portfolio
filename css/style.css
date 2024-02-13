@@ -50,6 +50,10 @@ body {
   background-color: var(--color-black);
 }
 
+/* h1 {
+  font-family: var(--yellow-pink-font);
+} */
+
 ul {
   display: flex;
   flex-direction: row;
@@ -171,7 +175,7 @@ h1 span {
 
 /* section code */
 section {
-  padding: 12rem 0;
+  padding: 7rem 0;
   border-bottom: 2px solid rgb(36, 35, 35);
 }
 /* section 1 styling */
@@ -213,7 +217,8 @@ section {
 }
 .textbox-form {
   width: 60%;
-  padding-top: 50px;
+  padding-top: 100px;
+  text-align: center;
 }
 .form-box {
   width: 100%;
@@ -255,6 +260,9 @@ section {
 } */
 
 /* footer styles */
+.footer-nav a {
+  align-items: center;
+}
 
 /* media queries */
 /* Tablet and Smaller */

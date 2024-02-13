@@ -19,6 +19,47 @@
   min-width: 600px;
 }
 
+.wd-bio {
+  align-items: center;
+}
+
+.wd-bio h2,
+.wd-bio h3 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.wd-bio p {
+  padding-bottom: 15px;
+}
+
+/* Skills styling */
+.skillset,
+.centered {
+  text-align: center;
+}
+
+.center {
+  align-items: center;
+}
+
+.skill-text {
+  padding-bottom: 70px;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* text-align: center; */
+}
+
+/* .pile {
+  width: 150px;
+} */
+
 /* projects styling */
 .center {
   text-align: center;
@@ -27,11 +68,16 @@
 .project-card {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .pc-text {
   text-align: center;
   width: 50%;
+  margin-bottom: 50px;
+}
+.pc-text h3 {
+  margin-top: 0px;
 }
 
 .pc-img {
@@ -42,6 +88,16 @@
   width: 100%;
 }
 
+.pc-text a {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.skillset ul {
+  padding: 0;
+}
+
 /* section code
 section {
   padding: 12rem 0;
@@ -49,3 +105,44 @@ section {
 } */
 
 /* media queries */
+/* Tablet and Smaller */
+@media screen and (max-width: 1080px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pc-img {
+    width: 100%;
+  }
+  .pc-text {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+}
+/* Media */
+@media screen and (max-width: 925px) {
+  .header {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .title-container {
+    min-width: unset;
+    width: 90%;
+  }
+}
+@media (max-width: 666px) {
+  .header {
+    text-align: center;
+  }
+  .title-container {
+    left: 50%;
+  }
+  .skill {
+    flex-basis: 50%;
+  }
+}
