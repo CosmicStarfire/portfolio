@@ -84,9 +84,9 @@ li {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
     url(../assets/images/hero-tipi.jpg);
   min-height: 100vh;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
   /* position: relative; */
   /* font-size: var(--font-size-normal); */

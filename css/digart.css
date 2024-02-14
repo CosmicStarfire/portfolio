@@ -2,10 +2,11 @@
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    url(../assets/images/hero-img-blue-moon.jpg);
+    url(../assets/images/testest.jpg);
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
   background-attachment: fixed;
   /* font-size: var(--font-size-normal); */
 }
