@@ -114,6 +114,10 @@ nav ul {
   display: none;
 }
 
+/* .nav-links-container {
+  display: none !important;
+} */
+
 #mobile-menu {
   display: none;
 }
@@ -324,7 +328,8 @@ textarea {
   /* mobile menu button style */
 
   .hamburger {
-    margin-left: 600px;
+    margin-left: auto;
+    margin-top: 30px;
   }
 
   #mobile-menu {
@@ -350,9 +355,10 @@ textarea {
 
   #nav-links-container {
     position: absolute;
-    top: 50px;
+    top: 15px;
     bottom: 0px;
     right: -20px;
+
     z-index: 10;
   }
 
@@ -363,8 +369,9 @@ textarea {
     margin: 0;
     gap: 20px;
     flex-direction: column;
-    background-color: black;
-    width: 200px;
+    background-color: rgb(82, 12, 82);
+    border-radius: 20px;
+    width: 250px;
     height: auto;
     overflow: hidden;
     padding: 28px 55px 44px 46px;
