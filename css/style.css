@@ -109,19 +109,12 @@ nav ul {
   gap: 40px;
 }
 
-/* nav links mobile code start */
-/* accessibility */
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+/* nav styles */
+.hidden {
+  display: none;
 }
-/* mobile hidden */
-#menu-container {
+
+#mobile-menu {
   display: none;
 }
 
@@ -324,11 +317,16 @@ textarea {
 }
 /* Mobile */
 @media screen and (max-width: 768px) {
-  /* desktop nav hidden */
   .desktop-nav {
     display: none;
   }
+
   /* mobile menu button style */
+
+  .hamburger {
+    margin-left: 600px;
+  }
+
   #mobile-menu {
     background-color: transparent;
     border: 0px;
@@ -340,19 +338,14 @@ textarea {
 
   #mobile-menu svg {
     fill: white;
+    align-items: right;
   }
 
   /* menu container */
-
   #menu-container {
     position: relative;
     display: flex;
     align-items: center;
-  }
-
-  nav .img-container {
-    max-width: 390px;
-    margin: auto;
   }
 
   #nav-links-container {
@@ -381,14 +374,13 @@ textarea {
     color: white;
     text-decoration: none;
     /* font-weight: var(--font-weight-regular); */
+    /* font-size: var(--font16); */
   }
 
   /* The Mobile X */
   #mobileClose {
     display: hidden;
   }
-
-  /* nav links mobile end */
 }
 @media (max-width: 500px) {
 }
