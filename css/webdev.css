@@ -121,6 +121,12 @@ section {
     margin-bottom: 50px;
   }
 }
+/* Smaller than tablet */
+@media screen and (max-width: 1038px) {
+  .header {
+    text-align: center;
+  }
+}
 /* Media */
 @media screen and (max-width: 925px) {
   .header {
@@ -137,9 +143,6 @@ section {
   }
 }
 @media (max-width: 666px) {
-  .header {
-    text-align: center;
-  }
   .title-container {
     left: 50%;
   }

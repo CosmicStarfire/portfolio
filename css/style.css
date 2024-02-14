@@ -266,20 +266,16 @@ section {
 
 /* media queries */
 /* Tablet and Smaller */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1038px) {
+  .header {
+    text-align: center;
+  }
 }
 /* Media */
 @media screen and (max-width: 925px) {
-  .header {
-    background-size: contain;
-    background-position: top;
-  }
 }
 /* Mobile */
 @media screen and (max-width: 768px) {
 }
 @media (max-width: 500px) {
-  .header {
-    text-align: center;
-  }
 }

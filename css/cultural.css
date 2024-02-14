@@ -19,3 +19,10 @@
   transform: translate(-50%, -50%);
   min-width: 600px;
 }
+
+/* Tablet and Smaller */
+@media screen and (max-width: 1038px) {
+  .header {
+    text-align: center;
+  }
+}
