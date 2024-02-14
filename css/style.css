@@ -109,6 +109,22 @@ nav ul {
   gap: 40px;
 }
 
+/* nav links mobile code start */
+/* accessibility */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+/* mobile hidden */
+#menu-container {
+  display: none;
+}
+
 /* possibly get rid of all the position absolutes and relatives and use flex boxes instead try that! */
 .title-container {
   position: absolute;
@@ -179,6 +195,28 @@ section {
   border-bottom: 2px solid rgb(36, 35, 35);
 }
 /* section 1 styling */
+.home-bio {
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-me {
+  width: 30%;
+}
+
+.home-bio img {
+  width: 100%;
+}
+
+.home-text {
+  width: 80%;
+}
+
+.home-text h2 {
+  margin: 0;
+}
 
 /* section 2 styling */
 .card-container {
@@ -217,8 +255,11 @@ section {
 }
 .textbox-form {
   width: 60%;
-  padding-top: 100px;
+  /* padding-top: 100px; */
   text-align: center;
+}
+.textbox-form h2 {
+  margin: 0;
 }
 .form-box {
   width: 100%;
@@ -283,6 +324,71 @@ textarea {
 }
 /* Mobile */
 @media screen and (max-width: 768px) {
+  /* desktop nav hidden */
+  .desktop-nav {
+    display: none;
+  }
+  /* mobile menu button style */
+  #mobile-menu {
+    background-color: transparent;
+    border: 0px;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    z-index: 11;
+  }
+
+  #mobile-menu svg {
+    fill: white;
+  }
+
+  /* menu container */
+
+  #menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  nav .img-container {
+    max-width: 390px;
+    margin: auto;
+  }
+
+  #nav-links-container {
+    position: absolute;
+    top: 50px;
+    bottom: 0px;
+    right: -20px;
+    z-index: 10;
+  }
+
+  /* nav-links style */
+  #nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    gap: 20px;
+    flex-direction: column;
+    background-color: black;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    padding: 28px 55px 44px 46px;
+  }
+
+  #nav-links a {
+    color: white;
+    text-decoration: none;
+    /* font-weight: var(--font-weight-regular); */
+  }
+
+  /* The Mobile X */
+  #mobileClose {
+    display: hidden;
+  }
+
+  /* nav links mobile end */
 }
 @media (max-width: 500px) {
 }
