@@ -23,6 +23,7 @@
 
 .wd-bio {
   align-items: center;
+  text-align: center;
 }
 
 .wd-bio h2,
@@ -34,6 +35,92 @@
 .wd-bio p {
   padding-bottom: 15px;
 }
+
+/* MODAL */
+
+/* positioning for body to stop scroll when modal is open */
+.hidden {
+  display: none;
+}
+.fixed {
+  overflow: hidden;
+}
+
+/* modal overlay */
+.overlay-la {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.modal {
+  width: 90%;
+  max-width: 1100px;
+  max-height: 90vh;
+  margin: 0 auto;
+  /* was 26px and replaced with variable */
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 8vh;
+  background-color: purple;
+  color: var(--color-onyx);
+  border: 1px solid var(--body-background-color);
+  border-radius: 15px;
+  z-index: 30;
+}
+
+.modal-wrapper {
+  position: relative;
+}
+
+.modal-content {
+  overflow-y: scroll;
+  max-height: 65vh;
+}
+
+.modal-scroll {
+  max-height: calc(85vh 300px);
+}
+
+/* modal text content */
+.modal p {
+  color: white;
+  margin: 20px;
+}
+
+.modal-header h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.btn-close {
+  position: absolute;
+  right: -10px;
+  top: -30px;
+}
+
+.btn-close button {
+  border: none;
+  background-color: transparent;
+}
+
+.btn-close svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* End of modal styles */
 
 /* Skills styling */
 .skillset,
