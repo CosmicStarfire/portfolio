@@ -199,6 +199,8 @@ section {
   max-width: 800px;
   margin: 0 auto;
   line-height: 30px;
+  border-left: 10px solid purple;
+  padding-top: 80px;
 }
 
 .home-me {
@@ -224,9 +226,19 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .card {
-  width: 23%;
+  min-width: 250px;
+  width: 45%;
+  max-width: 600px;
+  margin-top: 20px;
+  flex-grow: 1;
+}
+
+.card .btn {
+  object-position: bottom;
 }
 
 .cardimg {
@@ -239,6 +251,9 @@ section {
 
 .port-text {
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .port-text h3 {
@@ -393,6 +408,27 @@ textarea {
   /* The Mobile X */
   #mobileClose {
     display: hidden;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 15px;
+    max-width: 500px;
+    width: auto;
+  }
+
+  .home-bio {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+  }
+
+  .home-me {
+    width: 50%;
   }
 }
 @media (max-width: 500px) {
