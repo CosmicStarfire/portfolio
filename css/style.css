@@ -15,17 +15,37 @@ html {
   --color-white: white;
   --color-black: black;
   --color-pink: #ff3258;
+  --color-light-pink: pink;
   /* basic */
   /* gradients */
 
   /* text fonts */
-  --yellow-pink-font: "Honk", system-ui;
-  --hand-written-font: "Caveat", cursive;
+  --header-font: "Grandstander", cursive;
+  --body-font: "Nunito", sans-serif;
+
+  /* <weight>: Use a value from 100 to 900 */
+  /* font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+  /* <weight>: Use a value from 200 to 1000 */
+  /* font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
 
   /* font styles */
   /* font sizes */
+  --font-weight-2: 200;
+  --font-weight-3: 300;
   --font-weight-4: 400;
+  --font-weight-5: 500;
+  --font-weight-6: 600;
   --font-weight-7: 700;
+  --font-weight-8: 800;
+  --font-weight-9: 900;
+  --font-weight-10: 1000;
 
   /* line-height */
 
@@ -50,9 +70,13 @@ body {
   background-color: var(--color-black);
 }
 
-/* h1 {
-  font-family: var(--yellow-pink-font);
-} */
+.header-font {
+  font-family: var(--header-font);
+}
+
+.body-font {
+  font-family: var(--body-font);
+}
 
 ul {
   display: flex;
@@ -185,6 +209,10 @@ h1 span {
 .btn--pink:focus {
   background: transparent;
 }
+
+.btn--pink:active {
+  background: var(--color-pink);
+}
 /* hero btn styles end */
 
 /* section code */
@@ -273,6 +301,7 @@ section {
 
 .resume img {
   padding-bottom: 25px;
+  max-height: 550px;
 }
 
 .cert li {

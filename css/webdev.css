@@ -25,7 +25,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 750px;
 }
 
 .wd-bio h2,
@@ -138,6 +137,13 @@
   flex-direction: column;
   /* align-items: center; */
 }
+
+.skill-intro {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
 .skill-intro h2 {
   text-align: center;
 }
@@ -147,10 +153,12 @@
 }
 
 .skill-text {
-  padding-bottom: 70px;
+  /* padding-bottom: 70px;
   padding-left: 300px;
-  width: 800px;
+  width: 800px; */
+  line-height: 2;
 }
+
 .skill {
   display: flex;
   flex-direction: column;
@@ -170,23 +178,34 @@
   text-align: center;
 }
 
+.pc-h2 {
+  padding-bottom: 50px;
+}
+
 .project-card {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 50px auto;
 }
 
 .pc-text {
   text-align: center;
   width: 50%;
-  margin-bottom: 50px;
 }
+
 .pc-text h3 {
   margin-top: 0px;
 }
 
+.pc-text p {
+  line-height: 2;
+  text-align: left;
+}
+
 .pc-img {
   width: 50%;
+  margin-bottom: 4rem;
 }
 
 .pc-img img {

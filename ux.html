@@ -8,6 +8,11 @@
       type="image/png"
       href="./assets/images/favicon.ico"
     />
+     <!-- these first two are linking the fonts to google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Titan+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/ux.css" />
@@ -28,23 +33,23 @@
             <ul>
               <li>
                 <!-- home page -->
-                <a href="./index.html">Home</a>
+                <a class="header-font" href="./index.html">Home</a>
               </li>
             <li>
               <!-- first web dev -->
-              <a href="./webdev.html">Web Developer</a>
+              <a class="header-font" href="./webdev.html">Web Developer</a>
             </li>
             <li>
               <!-- second digital art -->
-              <a href="./digital-art.html">Digital Artist</a>
+              <a class="header-font" href="./digital-art.html">Digital Artist</a>
             </li>
             <li>
               <!-- third ux design -->
-              <a href="./ux.html"> UX Designer</a>
+              <a class="header-font" href="./ux.html"> UX Designer</a>
             </li>
             <li>
               <!-- fourth cultural presentation -->
-              <a href="./cultural.html">Cultural Presenter</a>
+              <a class="header-font" href="./cultural.html">Cultural Presenter</a>
             </li>
           </ul></div>
           
@@ -102,19 +107,19 @@
 							<ul id="nav-links">
                   <li>
                     <!-- first web dev -->
-                    <a href="./webdev.html">Web Developer</a>
+                    <a class="header-font" href="./webdev.html">Web Developer</a>
                   </li>
                   <li>
                     <!-- second digital art -->
-                    <a href="./digital-art.html">Digital Artist</a>
+                    <a class="header-font" href="./digital-art.html">Digital Artist</a>
                   </li>
                   <li>
                     <!-- third ux design -->
-                    <a href="./ux.html"> UX Designer</a>
+                    <a class="header-font" href="./ux.html"> UX Designer</a>
                   </li>
                   <li>
                     <!-- fourth cultural presentation -->
-                    <a href="./cultural.html">Cultural Presenter</a>
+                    <a class="header-font" href="./cultural.html">Cultural Presenter</a>
                   </li>
               </ul>
 						</div>
@@ -127,15 +132,15 @@
       <!-- title container -->
 
       <div class="title-container">
-        <h1>
+        <h1 class="header-font">
           <span>Miranda Saddleback ᓈᓈᑌᐏᑲᒥᐦᐠ</span>
           <span> Nânâtêwikamihk ~ Sky Waves Lodge</span>
         </h1>
-        <p>
+        <p class="body-font">
           A UX Designer/Web Designer based in Edmonton, Alberta.
         </p>
 
-        <a href="#contact-form" class="btn btn--pink">Get in touch</a>
+        <a href="#contact-form" class="body-font btn btn--pink">Get in touch</a>
       </div>
     </header>
     <main>
@@ -146,10 +151,10 @@
       <!-- projects -->
       <section></section>
        <!-- section 4 call to action -->
-       <section class="form-text wrapper">
+      <section class="form-text wrapper">
         <div class="textbox-form">
-          <h2>Get in Touch and Let the Fun Begin!</h2>
-          <p>
+          <h2 class="header-font">Get in Touch and Let the Fun Begin!</h2>
+          <p class="body-font">
             Ready to dive into the excitement? Reach out, share your thoughts,
             or just spread some good vibes!✨
           </p>
@@ -159,7 +164,7 @@
               <li>
                 <!-- first social icon linkedin -->
                 <img src="./assets/svg-icons/linkedin.svg" alt="Linkedin Icon" aria-label="Linkedin Icon">
-                <a class="sil3"
+                <a class="body-font sil3"
                   href="https://www.linkedin.com/in/miranda-saddleback-935639292/"
                   >Linkedin</a
                 >
@@ -167,17 +172,17 @@
               <li>
                 <!-- second social icon link to git hub  -->
                 <img src="./assets/svg-icons/githubpink.svg" alt="Git Hub Icon" aria-label="Email Icon">
-                <a  class="sil3"href="https://github.com/CosmicStarfire">GitHub</a>
+                <a  class="body-font sil3"href="https://github.com/CosmicStarfire">GitHub</a>
               </li>
               <li>
                 <!-- third social icon email -->
                 <img src="./assets/svg-icons/email.svg" alt="Email Icon" aria-label="Email Icon">
-                <a href="mailto:nanatewikamik@gmail.com">Email</a>
+                <a class="body-font" href="mailto:nanatewikamik@gmail.com">Email</a>
               </li>
               <li>
                 <!-- fourth social icon discord -->
                 <img src="./assets/svg-icons/discord.svg" alt="Discord Icon" aria-label="Discord Icon">
-                <a  class="sil3"href="https://discord.com/users/cosmicstarfire">Discord</a>
+                <a  class="body-font sil3"href="https://discord.com/users/cosmicstarfire">Discord</a>
               </li>
             </ul>
           </div>
@@ -191,7 +196,7 @@
             class="contact-form"
           >
             <!-- name -->
-            <label for="name">Name</label>
+            <label class="body-font" for="name">Name</label>
             <input
               type="text"
               name="name"
@@ -199,7 +204,7 @@
               placeholder="Name: Jane/John Doe"
             />
             <!-- email -->
-            <label for="email">Email</label>
+            <label class="body-font" for="email">Email</label>
             <input
               type="email"
               name="email"
@@ -207,7 +212,7 @@
               placeholder="Email: jdoe@email.com"
             />
             <!-- message -->
-            <label for="message">Message</label>
+            <label class="body-font" for="message">Message</label>
             <textarea
               name="message"
               id="message"
@@ -216,7 +221,7 @@
               placeholder="Message: I'm inquiring about..."
             ></textarea>
             <!-- submit button -->
-            <button type="submit" class="btn btn--pink button1">Submit</button>
+            <button type="submit" class="body-font btn btn--pink button1">Submit</button>
           </form>
         </div>
       </section>
