@@ -167,16 +167,19 @@
       </section>
       <!-- section 2 skills-->
       <section class="skillset wrapper">
-        <h2>My Skillset Showcase</h2>
-        <p class="skill-text">
-          With a dynamic skill set, I navigate the digital realm with
-          proficiency in HTML5, CSS3, and JavaScript. I champion accessibility
-          and responsive design, ensuring seamless user experiences. My version
-          control prowess extends to Git and GitHub. I'm well-versed in building
-          interactive interfaces with React, empowering server-side
-          functionalities with Node.js, and honing my craft in the streamlined
-          environment of VS Code.
-        </p>
+        <div class="skill-intro">
+            <h2>My Skillset Showcase</h2>
+            <p class="skill-text">
+              With a dynamic skill set, I navigate the digital realm with
+              proficiency in HTML5, CSS3, and JavaScript. I champion accessibility
+              and responsive design, ensuring seamless user experiences. My version
+              control prowess extends to Git and GitHub. I'm well-versed in building
+              interactive interfaces with React, empowering server-side
+              functionalities with Node.js, and honing my craft in the streamlined
+              environment of VS Code.
+            </p>
+        </div>
+        
         <div>
           <ul>
             <li class="skill">
@@ -237,7 +240,7 @@
             <li class="skill">
               <!-- github -->
               <img
-                src="./assets/svg-icons/github.svg"
+                src="./assets/svg-icons/githubpink.svg"
                 alt="Git Hub Icon"
                 aria-label="Git Hub Icon"
               />
@@ -347,85 +350,87 @@
           </div>
         </div>
       </section>
-      <!-- section 4 call to action -->
-      <section class="form-text wrapper">
-        <div class="textbox-form">
-          <h2>Get in Touch and Let the Fun Begin!</h2>
-          <p>
-            Ready to dive into the excitement? Reach out, share your thoughts,
-            or just spread some good vibes!✨
-          </p>
-        </div>
-
-        <!-- form -->
-        <div class="form-box">
-          <form
-            action="https://formspree.io/f/meqyavwq"
-            method="POST"
-            class="contact-form"
-            id="contact-form"
-          >
-            <!-- name -->
-            <label for="name" class="hidden">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Jane/John Doe"
-            />
-            <!-- email -->
-            <label for="email" class="hidden">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="jdoe@email.com"
-            />
-            <!-- message -->
-            <label for="message" class="hidden">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="I'm inquiring about..."
-            ></textarea>
-            <!-- submit button -->
-            <button type="submit" class="btn btn--pink">Submit</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- footer -->
-    <footer>
-      <nav class="footer-nav wrapper">
+     <!-- section 4 call to action -->
+     <section class="form-text wrapper">
+      <div class="textbox-form">
+        <h2>Get in Touch and Let the Fun Begin!</h2>
+        <p>
+          Ready to dive into the excitement? Reach out, share your thoughts,
+          or just spread some good vibes!✨
+        </p>
         <div>
           <!-- social links -->
-          <ul>
+          <ul class="social-icons">
             <li>
               <!-- first social icon linkedin -->
-              <a
+              <img src="./assets/svg-icons/linkedin.svg" alt="Linkedin Icon" aria-label="Linkedin Icon">
+              <a class="sil3"
                 href="https://www.linkedin.com/in/miranda-saddleback-935639292/"
                 >Linkedin</a
               >
             </li>
             <li>
               <!-- second social icon link to git hub  -->
-              <a href="https://github.com/CosmicStarfire">GitHub</a>
+              <img src="./assets/svg-icons/githubpink.svg" alt="Git Hub Icon" aria-label="Email Icon">
+              <a  class="sil3"href="https://github.com/CosmicStarfire">GitHub</a>
             </li>
             <li>
               <!-- third social icon email -->
+              <img src="./assets/svg-icons/email.svg" alt="Email Icon" aria-label="Email Icon">
               <a href="mailto:nanatewikamik@gmail.com">Email</a>
             </li>
             <li>
               <!-- fourth social icon discord -->
-              <a href="https://discord.com/users/cosmicstarfire">Discord</a>
+              <img src="./assets/svg-icons/discord.svg" alt="Discord Icon" aria-label="Discord Icon">
+              <a  class="sil3"href="https://discord.com/users/cosmicstarfire">Discord</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </footer>
+      </div>
+
+      <!-- form -->
+      <div class="form-box">
+        <form
+          action="https://formspree.io/f/meqyavwq"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- name -->
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name: Jane/John Doe"
+          />
+          <!-- email -->
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email: jdoe@email.com"
+          />
+          <!-- message -->
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message: I'm inquiring about..."
+          ></textarea>
+          <!-- submit button -->
+          <button type="submit" class="btn btn--pink button1">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="wrapper">
+    <p>&copy;Copyright 2024 Miranda Saddelback</p>
+  </footer>
     <!-- MODAL -->
     <!-- LAND ACKNOWLEDGEMENTS -->
     <section class="modal hidden">

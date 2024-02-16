@@ -12,7 +12,10 @@ const openModal = function () {
   body.classList.add("fixed");
 };
 // Event listener for opening the modal when the button is clicked
-openModalBtn.addEventListener("click", openModal());
+
+openModalBtn.addEventListener("click", function () {
+  openModal();
+});
 
 // Function for closing the modal
 const closeModal = function () {
