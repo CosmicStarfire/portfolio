@@ -2,10 +2,31 @@
 
 .header {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    url(../assets/images/tipi-ceremony.jpg);
+    url(../assets/images/hero-img-orange.jpg);
   min-height: 100vh;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  /* position: relative; */
   /* font-size: var(--font-size-normal); */
+}
+
+.title-container {
+  position: absolute;
+  top: 50%;
+  /* right: 25%; */
+  left: 51%;
+  transform: translate(-50%, -50%);
+  min-width: 600px;
+}
+
+/* Tablet and Smaller */
+@media screen and (max-width: 1038px) {
+  .header {
+    /* text-align: center; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
