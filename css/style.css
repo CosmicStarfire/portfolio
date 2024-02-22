@@ -296,12 +296,14 @@ section {
 /* section 3 styling */
 .resume {
   text-align: center;
-  width: 50%;
+  width: auto;
+  display: flex;
+  flex-flow: column;
 }
 
 .resume img {
   padding-bottom: 25px;
-  max-height: 550px;
+  max-width: 100%;
   border-radius: 20px;
 }
 
@@ -427,7 +429,11 @@ label {
 }
 
 /* media queries */
-
+@media screen and (max-width: 1200px) {
+  .cert {
+    padding-left: 20px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .form-text {
     display: flex;
@@ -443,16 +449,11 @@ label {
     padding-bottom: 30px;
   }
 
-  .resume {
+  /* .resume {
     width: 50%;
-  }
-
+  } */
   .resume img {
     padding-bottom: 25px;
-  }
-
-  .cert {
-    padding-left: 20px;
   }
 
   .cert li {
