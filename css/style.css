@@ -305,6 +305,7 @@ section {
   padding-bottom: 25px;
   max-width: 100%;
   border-radius: 20px;
+  max-height: 550px;
 }
 
 .cert li {
