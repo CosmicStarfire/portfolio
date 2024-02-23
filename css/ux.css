@@ -30,3 +30,15 @@
     background-position: top;
   }
 }
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .title-container {
+    min-width: unset;
+    width: 90%;
+  }
+}
+@media (max-width: 666px) {
+  .title-container {
+    left: 50%;
+  }
+}
