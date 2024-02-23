@@ -484,6 +484,10 @@ label {
 }
 /* Media */
 @media screen and (max-width: 880px) {
+  .title-container {
+    min-width: unset;
+    width: 90%;
+  }
   /* mobile menu button style */
   .desktop-nav {
     display: none;
@@ -584,5 +588,11 @@ label {
     align-items: center;
   }
 }
+@media (max-width: 666px) {
+  .title-container {
+    left: 50%;
+  }
+}
+
 @media (max-width: 500px) {
 }
