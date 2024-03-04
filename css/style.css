@@ -535,7 +535,7 @@ label {
     margin: 0;
     gap: 20px;
     flex-direction: column;
-    background-color: #be89f0;
+    background-color: var(--color-pink);
     border-radius: 20px;
     /* width: 250px; */
     height: auto;
